@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { AiFillGithub, AiFillTool, AiFillMail } from "react-icons/ai";
 import ContactItem from "./ContactItem";
+<<<<<<< HEAD
 import { bg_color } from "../../assets/color";
+=======
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
 
 export default function Contact() {
   const contactList = [
@@ -24,7 +27,11 @@ export default function Contact() {
       <Box>
         <Thx>img</Thx>
         <ContactBox>
+<<<<<<< HEAD
           <h6>Contact</h6>
+=======
+          <p>Contact</p>
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
           {contactList.map((contact) => (
             <ContactItem key={contact.id} contact={contact} />
           ))}
@@ -40,7 +47,11 @@ const Container = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   background-color: ${bg_color};
+=======
+  background-color: #d1ffd1;
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
 `;
 
 const Box = styled.div`
@@ -65,8 +76,14 @@ const ContactBox = styled.div`
   padding: 20px;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   h6 {
     font-size: 1.4em;
     padding: 7px 0;
+=======
+  p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
   }
 `;

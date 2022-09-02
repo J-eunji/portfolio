@@ -5,7 +5,10 @@ import { BsChatDots } from "react-icons/bs";
 import { IoBookOutline } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import aboutImg from "../../assets/imgs/about.png";
+<<<<<<< HEAD
 import { bg_color } from "../../assets/color";
+=======
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
 import Skill from "./Skill";
 import Strength from "./Strength";
 
@@ -24,11 +27,15 @@ export default function About() {
     { id: 2, name: "수용", icon: <BsChatDots /> },
     { id: 3, name: "배움", icon: <IoBookOutline /> },
   ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
   const handleSection = (id) => {
     setAboutIndex(id);
   };
 
+<<<<<<< HEAD
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
@@ -38,6 +45,13 @@ export default function About() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+=======
+  useEffect(() => {
+    window.addEventListener("scroll", () => setScroll(window.scrollY));
+    return () =>
+      window.removeEventListener("scroll", () => setScroll(window.scrollY));
+  }, []);
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
   const scaleX = aboutIndex === 1 && scroll >= window.innerHeight;
 
   return (
@@ -45,21 +59,38 @@ export default function About() {
       <IntroduceSection>
         <ImgBox>
           <Title>
+<<<<<<< HEAD
             <h3>About Me</h3>
           </Title>
           <Img />
           <Name>
             <h4>효율성을 추구하는 개발자</h4>
+=======
+            <p>About Me</p>
+          </Title>
+          <Img />
+          <Name>
+            <p>효율성을 추구하는 개발자</p>
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
           </Name>
         </ImgBox>
         <IntroduceText>
           <p>
+<<<<<<< HEAD
             안녕하세요. 프론트엔드 웹 개발 지원자 정은지입니다.
             <br /> 제 적성에 맞는 길을 찾아 신중히 한 선택 후회없도록 열심히
             하겠습니다. <br /> 5년 간 사회복지사로서 쌓은 소통, 협력, 수용
             능력과
             <br />
             저의 장점인 끈기, 노력을 보여드리겠습니다.
+=======
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus sit quasi, obcaecati eos animi alias molestiae
+            dolores illo? Id, obcaecati eius? Rerum mollitia corporis nam, illum
+            nobis velit vitae deleniti suscipit aliquam, eaque ipsum? Ad
+            delectus esse, laborum molestiae dolorem dolor perspiciatis eius
+            expedita excepturi nihil voluptatum, corporis maiores minus.
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
           </p>
         </IntroduceText>
         <BsChevronDoubleRight
@@ -116,7 +147,11 @@ const IntroduceSection = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
+<<<<<<< HEAD
   background-color: ${bg_color};
+=======
+  background-color: peachpuff;
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
   .Btn {
     cursor: pointer;
     position: absolute;
@@ -171,7 +206,11 @@ const AbilitySection = styled.div`
   align-items: flex-end;
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   background-color: ${bg_color};
+=======
+  background-color: lightblue;
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
   position: relative;
   .Btn {
     cursor: pointer;

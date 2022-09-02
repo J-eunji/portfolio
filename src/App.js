@@ -2,10 +2,14 @@ import { createGlobalStyle } from "styled-components";
 import { RecoilRoot } from "recoil";
 import Header from "./components/Header";
 import Home from "./components/Home";
+<<<<<<< HEAD
 import scdream from "./static/fonts/SCDream3.ttf";
 import scdreamBold from "./static/fonts/SCDream7.ttf";
 import english from "./static/fonts/THEBOLDFONT.ttf";
 import "./font.css";
+=======
+import scdream from "./assets/fonts/SCDream1.ttf";
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
 
 function App() {
   return (
@@ -18,6 +22,11 @@ function App() {
 }
 
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: "SCDream1";
+  src: url(${scdream});
+}
+
 * {
   list-style: none;
   box-sizing: border-box;
@@ -26,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 #root p, span {
   font-family: 'content';
 }
@@ -42,6 +52,10 @@ const GlobalStyle = createGlobalStyle`
 #root h1 {
   font-family: 'titleEn';
   font-weight: lighter;
+=======
+html {
+  font-family: "SCDream1";
+>>>>>>> e3f8d6e60bdd5cbed9486ba20d8ec4234ad1bed5
 }
 `;
 
