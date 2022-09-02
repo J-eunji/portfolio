@@ -3,11 +3,12 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import styled from "styled-components";
 import mainImg from "../../assets/imgs/mainImg.png";
 import { indexState } from "../atoms/index";
-import { useRecoilState } from "recoil";
+import { maskState } from "../atoms/mask";
+import { useRecoilState, useRecoilValue } from "recoil";
 
 export default function CloneContainer() {
   const [index, setIndex] = useRecoilState(indexState);
-  const [mask, setMask] = useState({ x: 0, y: 0 });
+  const mask = useRecoilValue(maskState);
   const [maskSize, setMaskSize] = useState(10);
 
   const onClickIcon = (id) => {
@@ -16,10 +17,6 @@ export default function CloneContainer() {
       top: window.innerHeight * index,
       behavior: "smooth",
     });
-  };
-
-  const handleMask = (e) => {
-    setMask({ x: e.clientX, y: e.clientY });
   };
 
   const { x, y } = mask;
@@ -32,7 +29,7 @@ export default function CloneContainer() {
   };
 
   return (
-    <Section onMouseMove={(e) => handleMask(e)}>
+    <Section>
       <Container maskSize={maskSize} x={x} y={y}>
         <MainBox>
           <ContentBox

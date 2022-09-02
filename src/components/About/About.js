@@ -38,7 +38,7 @@ export default function About() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scaleX = aboutIndex === 1 && scroll >= window.innerHeight;
+  const scaleX = aboutIndex === 1 && scroll >= window.innerHeight / 3;
 
   return (
     <Container aboutIndex={aboutIndex}>
@@ -122,6 +122,10 @@ const IntroduceSection = styled.div`
     position: absolute;
     top: 50%;
     right: 50px;
+    &:hover {
+      transform: translateX(10px);
+      transition: 0.1s;
+    }
   }
 `;
 const ImgBox = styled.div`
@@ -178,6 +182,10 @@ const AbilitySection = styled.div`
     position: absolute;
     top: 50%;
     left: 50px;
+    &:hover {
+      transform: translateX(-10px);
+      transition: 0.1s;
+    }
   }
 `;
 

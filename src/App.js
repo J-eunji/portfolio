@@ -3,13 +3,16 @@ import { RecoilRoot } from "recoil";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import "./font.css";
+import Wrap from "./components/Wrap";
 
 function App() {
   return (
     <RecoilRoot>
       <GlobalStyle />
-      <Header />
-      <Home />
+      <Wrap>
+        <Header />
+        <Home />
+      </Wrap>
     </RecoilRoot>
   );
 }
@@ -34,6 +37,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'titleEn';
   font-weight: lighter;
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 `;
 
