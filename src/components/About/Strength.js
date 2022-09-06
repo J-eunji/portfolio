@@ -17,11 +17,11 @@ const Container = styled.div`
   width: 180px;
 `;
 
+const Icon = styled.div`
+  font-size: 70px;
+`;
+
 const Name = styled.span`
   font-size: 0.8em;
   font-weight: 700;
-`;
-
-const Icon = styled.div`
-  font-size: 45px;
 `;

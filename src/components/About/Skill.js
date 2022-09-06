@@ -5,7 +5,9 @@ export default function Skill({ skill, scaleX }) {
   return (
     <Container>
       <Name>{name}</Name>
-      <Percentage degree={degree} scaleX={scaleX} />
+      <Bar>
+        <Percentage degree={degree} scaleX={scaleX} />
+      </Bar>
     </Container>
   );
 }
@@ -13,15 +15,13 @@ export default function Skill({ skill, scaleX }) {
 const Container = styled.div`
   display: flex;
   align-items: center;
-  width: 800px;
   height: 50px;
-  padding: 35px 60px;
+  padding: 30px 60px;
 `;
 
 const Name = styled.span`
   width: 100px;
   font-size: 1.2em;
-  font-weight: 700;
 `;
 
 const scaling = keyframes`
@@ -30,10 +30,20 @@ const scaling = keyframes`
   }
 `;
 
-const Percentage = styled.div`
+const Bar = styled.div`
   border: #000 2px solid;
+  width: 400px;
+  height: 14px;
+  border-radius: 9px;
+  position: relative;
+`;
+
+const Percentage = styled.div`
+  height: 10px;
+  background-color: #000;
+  border-radius: 5px;
   ${({ degree }) => css`
-    width: ${degree * 6}px;
+    width: ${degree * 4}px;
   `}
   ${({ scaleX }) =>
     scaleX &&
