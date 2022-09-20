@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export default function ProjectItem({ item }) {
   const { link, text, img, title, use, git } = item;
@@ -6,14 +6,17 @@ export default function ProjectItem({ item }) {
   return (
     <Container>
       <ImgBox img={img}>
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           <img src={require(`../../assets/imgs/${img}`)} alt={img} />
+          <div>
+            <p>Click!</p>
+          </div>
         </a>
       </ImgBox>
       <Title>{title}</Title>
       <Text>
         <p>{text}</p>
-        <p>code: {git}</p>
+        <p>Code: {git}</p>
         <p>{use}</p>
       </Text>
     </Container>
@@ -39,10 +42,31 @@ const ImgBox = styled.div`
   height: 220px;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 400px;
     height: 200px;
     border-radius: 8px;
+  }
+  &:hover {
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5em;
+      color: #fff;
+      padding: 85px 0;
+      width: 400px;
+      height: 200px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
   }
 `;
 

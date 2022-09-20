@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { AiFillGithub, AiFillTool, AiFillMail } from "react-icons/ai";
 import ContactItem from "./ContactItem";
 import { bg_color } from "../../assets/color";
+import profile from "../../assets/imgs/profile.png";
 
 export default function Contact() {
   const contactList = [
@@ -22,7 +23,7 @@ export default function Contact() {
   return (
     <Container>
       <Box>
-        <Thx>img</Thx>
+        <Img />
         <ContactBox>
           <h6>Contact</h6>
           {contactList.map((contact) => (
@@ -52,10 +53,15 @@ const Box = styled.div`
   position: relative;
 `;
 
-const Thx = styled.div`
-  width: 480px;
-  height: 500px;
-  background-color: rgb(0, 0, 0, 0.2);
+const Img = styled.div`
+  width: 180px;
+  height: 210px;
+  border-radius: 8px;
+  background-image: url(${profile});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  margin-left: 230px;
 `;
 
 const ContactBox = styled.div`
