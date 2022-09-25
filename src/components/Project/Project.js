@@ -16,17 +16,21 @@ export default function Project() {
             API를 이용하여 미디어(영화, TV, 인물)검색 사이트를 구현했습니다.
           </p>
           <p>
-            React의 특성을 이용하여 같은 디자인의 컴포넌트들로 구성하여 깔끔하고
-            가독성있게 작업했습니다.
+            React의 특성을 이용, <b>컴포넌트를 재사용</b>하여 깔끔하고
+            가독성있는 페이지를 목적으로 작업했습니다.
           </p>
           <p>
-            메인, 영화, TV, 인물 페이지 및 상세 페이지를 구성하여 편리하게
-            미디어 정보를 볼 수 있습니다.
+            <b>메인, 영화, TV, 인물 페이지 및 상세 페이지</b>를 구성하여
+            편리하게 미디어 정보를 볼 수 있습니다.
           </p>
         </>
       ),
       git: (
-        <a href="https://github.com/J-eunji/tmdb.git">
+        <a
+          href="https://github.com/J-eunji/tmdb.git"
+          target="_blank"
+          rel="noreferrer"
+        >
           https://github.com/J-eunji/tmdb.git
         </a>
       ),
@@ -40,19 +44,23 @@ export default function Project() {
       text: (
         <>
           <p>
-            react-calendar 라이브러리로 깔끔하고 이용하기 편리한 저만의
+            react-calendar 라이브러리로 <b>깔끔하고 이용하기 편리한</b> 저만의
             투두리스트를 만들어 보았습니다.
           </p>
           <p>
-            할 일을 작성하면 달력에 마크가 표시됩니다. 헤더에 남은 할 일의
-            갯수가 입력되고 할 일을 모두 완료하면 달력의 마크 색이 변합니다.
-            데이터를 로컬스토리지에 저장하여 새로고침해도 데이터를 유지할 수
-            있습니다.
+            할 일을 작성한 날은 달력에 마크가 표시됩니다. 헤더에 남은 할 일의
+            갯수가 입력되고 할 일을 모두 완료하면 달력의 마크 색이 변합니다.{" "}
+            <b>데이터를 로컬스토리지에 저장</b>하여 새로고침해도 데이터를 유지할
+            수 있습니다.
           </p>
         </>
       ),
       git: (
-        <a href="https://github.com/J-eunji/todolist.git">
+        <a
+          href="https://github.com/J-eunji/todolist.git"
+          target="_blank"
+          rel="noreferrer"
+        >
           https://github.com/J-eunji/todolist.git
         </a>
       ),
@@ -66,13 +74,14 @@ export default function Project() {
       text: (
         <>
           <p>
-            python을 배울 때 만들었던 여러가지 미니 프로젝트들을 모아놓은 노션
-            페이지 입니다.
+            python을 배울 때 만들었던 여러가지 <b>미니 프로젝트들</b>을 모아놓은
+            노션 페이지 입니다.
           </p>
           <p>
-            자판기, 타이핑 게임, 정보관리와 AI 딥러닝을 이용하여 동영상의 물체를
-            인식하는 프로그램 등이 있습니다. 처음 코딩을 접하고 만든 HTML
-            페이지로 제가 얼마나 발전했는지 알 수 있었습니다.
+            <b>자판기, 타이핑 게임, 정보관리</b>와 AI 딥러닝을 이용한{" "}
+            <b>동영상의 물체를 인식하는 프로그램</b> 등이 있습니다. 처음 HTML을
+            접하고 만든 자기소개 페이지로 제가 얼마나 발전했는지 알 수
+            있었습니다.
           </p>
         </>
       ),

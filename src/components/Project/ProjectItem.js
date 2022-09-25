@@ -81,8 +81,17 @@ const Text = styled.div`
   height: 280px;
   word-spacing: 2.5px;
   line-height: 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  p a,
+  p p a {
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p p b {
+    font-weight: 600;
+  }
 `;

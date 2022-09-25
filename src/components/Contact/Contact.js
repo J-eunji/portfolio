@@ -11,13 +11,13 @@ export default function Contact() {
       id: 2,
       icon: <AiFillGithub />,
       link: "https://github.com/J-eunji",
-      text: "https://github.com/J-eunji",
+      text: <b>"https://github.com/J-eunji"</b>,
     },
     {
       id: 3,
       icon: <AiFillTool />,
-      link: "https://devrecordabc.tistory.com/",
-      text: "https://devrecordabc.tistory.com/",
+      link: "https://velog.io/@sun220711",
+      text: <b>"https://velog.io/@sun220711"</b>,
     },
   ];
   return (

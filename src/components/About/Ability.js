@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BsChevronDoubleLeft } from "react-icons/bs";
 import { FaPeopleArrows } from "react-icons/fa";
-import { BsChatDots } from "react-icons/bs";
+import { MdChairAlt } from "react-icons/md";
 import { IoBookOutline } from "react-icons/io5";
 import { bg_color } from "../../assets/color";
 import Skill from "./Skill";
@@ -23,8 +23,8 @@ export default function Ability({ scaleX }) {
   ];
   const strengthList = [
     { id: 1, name: "배움", icon: <IoBookOutline /> },
-    { id: 2, name: "소통", icon: <FaPeopleArrows /> },
-    { id: 3, name: "수용", icon: <BsChatDots /> },
+    { id: 2, name: "협업", icon: <FaPeopleArrows /> },
+    { id: 3, name: "끈기", icon: <MdChairAlt /> },
   ];
   const setAboutIndex = useSetRecoilState(aboutIndex);
   const handleSection = (id) => {

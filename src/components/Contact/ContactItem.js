@@ -21,7 +21,11 @@ const Container = styled.div`
     font-size: 30px;
     margin-right: 10px;
   }
-  a {
+  a b {
     color: black;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;

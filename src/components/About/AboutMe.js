@@ -22,11 +22,16 @@ export default function AboutMe() {
             <Name>효율성을 추구하는 개발자</Name>
           </TitleBox>
           <Introduce>
-            안녕하세요. 프론트엔드 웹 개발 지원자 정은지입니다.
-            <br /> 5년, 10년 뒤의 저의 모습을 떠올리며 열심히 하겠습니다. <br />
-            5년 간 사회복지사로서 쌓은 소통, 협력, 수용 능력과
+            안녕하세요. <b>프론트엔드 웹 개발 지원자 정은지</b>입니다.
             <br />
-            저의 장점인 끈기와 노력을 보여드리겠습니다.
+            <b>5년, 10년 뒤의 저의 모습</b>을 떠올리며 열심히 하겠습니다.
+            <br />
+            반복되는 실패에도 <b>끊임없이 시도</b>하며 성장하겠습니다.
+            <br />
+            5년 간의 사회복지사 경력으로 쌓은 <b>최소한의 협업능력</b>과
+            <br />
+            저의 장점인 <b>끈기</b>와 <b>노력</b>을 보여드리겠습니다.
+            <br />
           </Introduce>
         </TextBox>
       </Box>
@@ -104,4 +109,7 @@ const Name = styled.h4`
 const Introduce = styled.p`
   font-size: 1em;
   line-height: 30px;
+  b {
+    font-weight: 700;
+  }
 `;
