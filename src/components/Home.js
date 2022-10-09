@@ -32,18 +32,17 @@ export default function Home() {
       }
     };
 
-    window.addEventListener("wheel", sectionChange, { passive: false });
-    return () => {
-      window.removeEventListener("wheel", sectionChange, { passive: false });
-    };
-  }, [isScrolling, index, setIndex]);
-
-  useEffect(() => {
     window.scrollTo({
       top: window.innerHeight * index,
       behavior: "smooth",
     });
-  }, [index]);
+
+    window.addEventListener("wheel", sectionChange, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", sectionChange, { passive: false });
+    };
+  }, [isScrolling, index, setIndex]);
 
   return (
     <Container>
