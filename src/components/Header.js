@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   useEffect(() => {
-    setGnbName(
+    setGnbName((gnbName) =>
       gnbName.map((gnb) =>
         gnb.id === index ? { ...gnb, active: true } : { ...gnb, active: false }
       )
